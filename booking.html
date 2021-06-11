@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Booking eGarage </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2><a href="home.html" target="_self" rel="noopener noreferrer">eGarage</a></h2>
+                <a href="home.html" target="_self" rel="noopener noreferrer">Home | </a>&nbsp; 
+                <a href="services.html" target="_self" rel="noopener noreferrer">Services | </a>&nbsp;
+                <a href="booking.html" target="_self" rel="noopener noreferrer">Booking | </a> &nbsp; 
+                <a href="mailto: contact@egarage.co.in">contact@egarage.co.in | </a> &nbsp;
+                &nbsp; Call: <em>999 999 999</em>
+            </nav>
+            <hr/>
+        </header>
+        <article>
+            <form autocomplete="off">
+                <section>
+                    <h1>
+                        Book Your Service <br/><br/>
+                    </h1>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="John doah" pattern="^[A-Z][a-z]+\s[A-Z][a-z]+$"/><br/><br/>
+                    <label for="email">Email Id:</label>
+                    <input type="email" id="email" name="email" required placeholder="john@yahoo.com"/><br/><br/>
+                    <label for="phone">Phone Number: </label>
+                    <select id="phone" name="phone">
+                        <option value="code" selected disabled>code</option>
+                        <option value="+91">+91</option>
+                        <option value="+213">+213</option>
+                        <option value="+244">+244</option>
+                        <option value="+61">+61</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" required placeholder="9988776655" pattern="[0-9]{10}"/><br/><br/> 
+                    <label for="ss">Select Service:</label>
+                    <select id="ss" name="ss" required>
+                        <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                        <option value="Body Repair Service">Body Repair Service</option>
+                        <option value="Car Care Service">Car Care Service</option>
+                    </select>
+                    <br/> <br/>
+                    <label for="cm">Car Make:</label>
+                    <input placeholder="ford, hyundai.." list="cm" required />
+                    <datalist id="cm" name="cm">
+                        <option value="Mahindra"></option>
+                        <option value="Honda"></option>
+                        <option value="Hyundai"></option>
+                        <option value="Ford"></option>
+                        <option value="Nissan"></option>
+                        <option value="Toyota"></option>
+                    </datalist> <br/><br/>
+                    <label for="cc">Car Model: </label>
+                    <input type="text" required id="cc" name="cc" placeholder="Innova, Creta.."/><br/><br/>
+                    <label for="ft">Fuel Type: </label>
+                    <input type="radio" id= "ft" name="ft" value="Petrol" required/>Petrol
+                    <input type="radio" id= "ft" name="ft" value="Diesel" required/>Diesel
+                    <input type="radio" id= "ft" name="ft" value="LPG"required/>LPG 
+                    <input type="radio" id= "ft" name="ft" value="Others" required/>Others
+                    <br/><br />
+                    <label for="kd">Kilometers driven:</label>
+                    <input type="number" id="kd" name="kd" required placeholder="KM"/><br/><br/><br/> 
+                    <input type="submit" formaction="appointment.html" value="Schedule an Appointment"/><br/><br/><br/>
+                </section>
+            </form>
+        </article>
+        <hr/>
+        <footer>
+            Copyright &copy; 2020 eGarage. All Rights Reserved.
+        </footer>
+    </body>
+</html>

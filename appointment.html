@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Appointment | eGarage
+        </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2><a href="home.html" target="_self" rel="noopener noreferrer">eGarage</a></h2>
+                <a href="home.html"  target="_self" rel="noopener noreferrer">Home | </a>&nbsp; 
+                <a href="services.html" target="_self" rel="noopener noreferrer">Services | </a>&nbsp; 
+                <a href="booking.html" target="_self" rel="noopener noreferrer">Booking | </a> &nbsp; 
+                <a href="mailto: contact@egarage.co.in">contact@egarage.co.in | </a> &nbsp; &nbsp; 
+                Call: <em>999 999 999</em>
+            </nav>
+            <hr/>
+        </header>
+        <article>
+        <form autocomplete="off">
+            <section>
+                <h1> Schedule Your Appointment</h1><br/><br/>
+            </section>
+            <section>
+                <label for="ad">Appointment Date:</label>
+                <input type="date" id="ad" name="ad" required/><br/><br/>
+                <label for="address">Address:</label> 
+                <textarea id="address" name="address" rows="10" cols="50" required></textarea><br/><br/>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required placeholder="Mumbal, Hyderabad.."/><br/><br/>
+                <label for="state">State:</label>
+                <input placeholder="Goa, Delhi.." list="state" required/>
+                    <datalist id="state" name="state">
+                        <option value="Telangana"></option>
+                        <option value="Andhra Pradesh"></option>
+                        <option value="Tamil Nadu"></option>
+                        <option value="Kerala"></option>
+                        <option value="Karnataka"></option>
+                    </datalist><br/><br/>
+                <label for="sn">Send Notification:</label>
+                <input type="checkbox" id="sn" name="sn" value="Email"/>Email 
+                <input type="checkbox" id="sn" name="sn" value="SMS" />SMS <br/><br/><br/>
+                <input type="submit" value="Book" formaction="booking-success.html"/>
+            </section>
+        </form>
+    </article><br/><br/>
+    <hr/>
+        <footer>
+            Copyright &copy; 2020 eGarage. All Rights Reserved.
+        </footer>
+    </body>
+</html>
